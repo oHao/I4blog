@@ -54,7 +54,7 @@ ROOT_URLCONF = 'I4blog.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR+'/templatem',],
+        'DIRS': [BASE_DIR+'/template',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
