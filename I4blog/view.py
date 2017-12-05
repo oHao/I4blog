@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from IImodel.models import i4Article
-from django import HttpResponse
+from django.http import HttpResponse
 
 
 def hello(request):
