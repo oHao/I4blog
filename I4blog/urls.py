@@ -20,4 +20,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^hello$', view.hello),
     url(r'^dbtest$', view.dbtest),
+
 ]
