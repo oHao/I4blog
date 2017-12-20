@@ -77,7 +77,9 @@
     </div><!-- /.navbar-collapse -->
     </div>
     <div class="row">
-        
+        {% for news in newsList%}
+            <a href="{{news}}"></a>
+        {% endfor %}
     </div>
   </div><!-- /.container-fluid -->
 </nav>

@@ -1,11 +1,12 @@
 from django.shortcuts import render
 from IImodel.models import i4Article
 from django.http import HttpResponse
+from newsSpider import newsSpider
 
 
 def hello(request):
     context = {}
-    context['hello'] = 'Are you FIRST_DAY_OF_WEEKly'
+    context['hello'] = newsSpider().getNews()
     return render(request, 'frame.html', context)
 
 
@@ -18,3 +19,4 @@ def dbtest(request):
 def menu(request):
     context = {}
     return render(request, 'menu.html', context)
+
