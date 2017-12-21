@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from IImodel.models import i4Article
 from django.http import HttpResponse
-from newsSpider import newsSpider
+from Spider import newsSpider
 
 
 def hello(request):

@@ -10,14 +10,11 @@ class newsSpider(object):
         super(newsSpider, self).__init__()
         self.arg = arg
 
-
-    def  getNews():
+    def getNews():
         url = "http://geek.csdn.net/"
         res = requests.get(url)
         content = BeautifulSoup(res.text, "html.parser")
         newslist = content.select("#geek_list > .geek_list > dd > span a")
-        newslistmsg = content.select("#geek_list > .geek_list > dd > .list-inline li ")
         print(type(newslist))
         return newslist
-
-
+print(newsSpider.getNews())
