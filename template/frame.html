@@ -77,8 +77,8 @@
     </div><!-- /.navbar-collapse -->
     </div>
     <div class="row">
-        {% for news in hello%}
-            <a href="{{news}}"></a>
+        {% for news2 in newslist%}
+            <a href="{{news2.href}}">{{news2.text}}</a><br>
         {% endfor %}
     </div>
   </div><!-- /.container-fluid -->
